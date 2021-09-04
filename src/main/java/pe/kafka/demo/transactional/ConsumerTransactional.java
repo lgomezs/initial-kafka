@@ -18,7 +18,7 @@ public class ConsumerTransactional {
         //Si no hay ningún error, los mensajes en el topic pasarán de read_uncommitted a read_committed y serán leidos por  el consumer.
 
         Properties props = new Properties();
-        props.setProperty("bootstrap.servers", "localhost:9092");
+        props.setProperty("bootstrap.servers", "localhost:29092");
         props.setProperty("group.id", "devs4j-group");
         props.setProperty("enable.auto.commit", "true");
         props.setProperty("isolation.level", "read_committed");

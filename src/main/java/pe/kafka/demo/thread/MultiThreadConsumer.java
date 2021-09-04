@@ -12,7 +12,7 @@ public class MultiThreadConsumer {
         ExecutorService executorService = Executors.newFixedThreadPool(5);
 
         Properties props = new Properties();
-        props.setProperty("bootstrap.servers", "localhost:9092");
+        props.setProperty("bootstrap.servers", "localhost:29092");
         props.setProperty("group.id", "devs4j-group");
         props.setProperty("enable.auto.commit", "true");
         props.setProperty("auto.commit.interval.ms", "1000");

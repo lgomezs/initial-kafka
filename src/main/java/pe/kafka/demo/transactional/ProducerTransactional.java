@@ -20,7 +20,7 @@ public class ProducerTransactional {
         // transactional.id=id-producer
 
         Properties props = new Properties();
-        props.put("bootstrap.servers", "localhost:9092");
+        props.put("bootstrap.servers", "localhost:29092");
         props.put("acks", "all");
         props.put("transactional.id", "id-producer");
         props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
